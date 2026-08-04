@@ -1,9 +1,8 @@
 name: Build Puantaj Paneli APK
 
 on:
-  push:
-    branches:
-      - puantaj-paneli-apk-build
+  pull_request:
+    branches: [main]
     paths:
       - 'puantaj-apk/**'
       - '.github/workflows/build-puantaj-apk.yml'
